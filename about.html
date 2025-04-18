@@ -15,60 +15,57 @@
     <!-- Page wrapper -->
     <div class="flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip">
 
-        <!-- Site header -->
-        <header class="absolute w-full z-30">
+         <!-- Site header -->
+         <header class="absolute w-full z-30">
             <div class="max-w-6xl mx-auto px-4 sm:px-6">
                 <div class="flex items-center justify-between h-16 md:h-20">
-
+        
                     <!-- Site branding -->
                     <div class="flex-1">
                         <!-- Logo -->
-                        <a class="inline-flex" href="index.html" aria-label="Cruip">
-                            <img class="max-w-none" src="./images/logo.svg" width="38" height="38" alt="Stellar">
+                        <a class="inline-flex" href="index.html" aria-label="ACMEWERX">
+                            <img class="max-w-none" src="./images/logo.png" width="400" height="216" alt="ACMEWERX">
                         </a>
                     </div>
-
+        
                     <!-- Desktop navigation -->
                     <nav class="hidden md:flex md:grow">
-
+        
                         <!-- Desktop menu links -->
                         <ul class="flex grow justify-center flex-wrap items-center">
                             <li>
-                                <a class="font-medium text-sm text-slate-300 hover:text-white mx-4 lg:mx-5 transition duration-150 ease-in-out" href="about.html">About</a>
+                                <a class="font-medium text-sm text-slate-300 hover:text-white mx-4 lg:mx-5 transition duration-150 ease-in-out" href="about.html">ABOUT US</a>
                             </li>
                             <li>
-                                <a class="font-medium text-sm text-slate-300 hover:text-white mx-4 lg:mx-5 transition duration-150 ease-in-out" href="integrations.html">Integrations</a>
+                                <a class="font-medium text-sm text-slate-300 hover:text-white mx-4 lg:mx-5 transition duration-150 ease-in-out" href="services.html">SERVICES</a>
                             </li>
                             <li>
-                                <a class="font-medium text-sm text-slate-300 hover:text-white mx-4 lg:mx-5 transition duration-150 ease-in-out" href="pricing.html">Pricing</a>
+                                <a class="font-medium text-sm text-slate-300 hover:text-white mx-4 lg:mx-5 transition duration-150 ease-in-out" href="acmewerx-labs.html">ACMEWERX LABS</a>
                             </li>
                             <li>
-                                <a class="font-medium text-sm text-slate-300 hover:text-white mx-4 lg:mx-5 transition duration-150 ease-in-out" href="customers.html">Customers</a>
-                            </li>
-                            <li>
-                                <a class="font-medium text-sm text-slate-300 hover:text-white mx-4 lg:mx-5 transition duration-150 ease-in-out" href="changelog.html">Changelog</a>
+                                <a class="font-medium text-sm text-slate-300 hover:text-white mx-4 lg:mx-5 transition duration-150 ease-in-out" href="unster.html">UNSTERWERX</a>
                             </li>
                         </ul>
-
+        
                     </nav>
-
+        
                     <!-- Desktop sign in links -->
                     <ul class="flex-1 flex justify-end items-center">
                         <li>
-                            <a class="font-medium text-sm text-slate-300 hover:text-white whitespace-nowrap transition duration-150 ease-in-out" href="signin.html">Sign in</a>
+                            <a class="font-medium text-sm text-slate-300 hover:text-white whitespace-nowrap transition duration-150 ease-in-out" href="signin.html">CLIENT LOGIN</a>
                         </li>
-                        <li class="ml-6">
+                       <!-- NAV SIGNUP (REMOVE) <li class="ml-6">
                             <a class="btn-sm text-slate-300 hover:text-white transition duration-150 ease-in-out w-full group [background:linear-gradient(var(--color-slate-900),var(--color-slate-900))_padding-box,conic-gradient(var(--color-slate-400),var(--color-slate-700)_25%,var(--color-slate-700)_75%,var(--color-slate-400)_100%)_border-box] relative before:absolute before:inset-0 before:bg-slate-800/30 before:rounded-full before:pointer-events-none" href="signup.html">
                                 <span class="relative inline-flex items-center">
                                     Sign up <span class="tracking-normal text-purple-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
                                 </span>
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
-
+                
                     <!-- Mobile menu -->
                     <div class="md:hidden flex items-center ml-4" x-data="{ expanded: false }">
-                    
+        
                         <!-- Hamburger button -->
                         <button class="group inline-flex w-8 h-8 text-slate-300 hover:text-white text-center items-center justify-center transition" aria-controls="mobile-nav" :aria-expanded="expanded" @click.stop="expanded = !expanded">
                             <span class="sr-only">Menu</span>
@@ -77,31 +74,27 @@
                                 <rect class="origin-center group-aria-expanded:rotate-45 transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.8)]" y="7" width="16" height="2" rx="1"></rect>
                                 <rect class="origin-center transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.1)] translate-y-[5px] group-aria-expanded:rotate-[135deg] group-aria-expanded:translate-y-0" y="7" width="16" height="2" rx="1"></rect>
                             </svg>
-                        </button>   
-                    
+                        </button>                             
+        
                         <!-- Mobile navigation -->
                         <nav id="mobile-nav" class="absolute top-full z-20 left-0 w-full px-4 sm:px-6 overflow-hidden transition-all duration-300 ease-in-out" x-ref="mobileNav" :style="expanded ? 'max-height: ' + $refs.mobileNav.scrollHeight + 'px; opacity: 1' : 'max-height: 0; opacity: .8'" @click.outside="expanded = false" @keydown.escape.window="expanded = false" x-cloak>
                             <ul class="border border-transparent [background:linear-gradient(var(--color-slate-900),var(--color-slate-900))_padding-box,conic-gradient(var(--color-slate-400),var(--color-slate-700)_25%,var(--color-slate-700)_75%,var(--color-slate-400)_100%)_border-box] rounded-lg px-4 py-1.5">
                                 <li>
-                                    <a class="flex font-medium text-sm text-slate-300 hover:text-white py-1.5" href="about.html">About</a>
+                                    <a class="flex font-medium text-sm text-slate-300 hover:text-white py-1.5" href="about.html">ABOUT US</a>
                                 </li>
                                 <li>
-                                    <a class="flex font-medium text-sm text-slate-300 hover:text-white py-1.5" href="integrations.html">Integrations</a>
+                                    <a class="flex font-medium text-sm text-slate-300 hover:text-white py-1.5" href="services.html">SERVICES</a>
+                                </li>
+                                    <a class="flex font-medium text-sm text-slate-300 hover:text-white py-1.5" href="acmewerx-labs.html">ACMEWERX LABS</a>
                                 </li>
                                 <li>
-                                    <a class="flex font-medium text-sm text-slate-300 hover:text-white py-1.5" href="pricing.html">Pricing</a>
-                                </li>
-                                <li>
-                                    <a class="flex font-medium text-sm text-slate-300 hover:text-white py-1.5" href="customers.html">Customers</a>
-                                </li>
-                                <li>
-                                    <a class="flex font-medium text-sm text-slate-300 hover:text-white py-1.5" href="changelog.html">Changelog</a>
+                                    <a class="flex font-medium text-sm text-slate-300 hover:text-white py-1.5" href="unster.html">UNSTERWERX</a>
                                 </li>
                             </ul>
                         </nav>
-                    
+        
                     </div>
-
+        
                 </div>
             </div>
         </header>
@@ -133,19 +126,11 @@
 
                         <!-- Hero content -->
                         <div class="text-center">
-                            <div class="inline-flex font-medium bg-clip-text text-transparent bg-linear-to-r from-purple-500 to-purple-200 pb-3">The folks behind the product</div>
-                            <h1 class="h1 bg-clip-text text-transparent bg-linear-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-6">Turning security into innovation</h1>
-                            <!-- Rings illustration -->
-                            <div class="inline-flex items-center justify-center relative">
+                            <div class="inline-flex font-medium bg-clip-text text-transparent bg-linear-to-r from-purple-500 to-purple-200 pb-3">The BUILDERS behind the product</div>
+                            <h1 class="h1 bg-clip-text text-transparent bg-linear-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-6">Our story (so far)</h1>
                                 <!-- Particles animation -->
                                 <div class="absolute inset-0 -z-10" aria-hidden="true">
                                     <canvas data-particle-animation data-particle-quantity="10"></canvas>
-                                </div>
-                                <div class="inline-flex [mask-image:_radial-gradient(circle_at_bottom,transparent_15%,black_70%)]">
-                                    <img src="./images/about-illustration.svg" width="446" height="446" alt="About illustration" />
-                                </div>
-                                <img class="absolute mt-[30%] drop-shadow-lg animate-float" src="./images/about-icon.svg" width="72" height="72" alt="About icon" />
-                            </div>
                         </div>
 
                     </div>
@@ -165,19 +150,13 @@
                                 <stop offset="100%" stop-color="#6366F1" stop-opacity="0"></stop>
                             </linearGradient>
                         </defs>
-                        <path fill="url(#bs4-a)" fill-rule="evenodd" d="m0 0 461 369-284 58z" transform="matrix(1 0 0 -1 0 427)"></path>
-                    </svg>
                 </div>
 
                 <div class="px-4 sm:px-6">
                     <div class="max-w-5xl mx-auto">
                         <div class="pb-12 md:pb-20">
                         
-                            <!-- Section header -->
-                            <div class="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-                                <h2 class="h2 bg-clip-text text-transparent bg-linear-to-r from-slate-200/60 via-slate-200 to-slate-200/60">Our story (so far)</h2>
-                            </div>
-                        
+                            <!-- Section header -->  
                             <div class="md:flex justify-between space-x-6 md:space-x-8 lg:space-x-14">
                                 <figure class="min-w-[240px]">
                                     <img class="sticky top-8 mx-auto mb-12 md:mb-0 rounded-lg -rotate-[4deg]" src="./images/team.jpg" width="420" height="280" alt="Team" />
@@ -552,8 +531,8 @@
 
                         <!-- Section header -->
                         <div class="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-                            <h2 class="h2 bg-clip-text text-transparent bg-linear-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-4">Join a team of makers</h2>
-                            <p class="text-lg text-slate-400">We are makers at heart. Problem solvers and storytellers. We are a diverse team of individuals who build things to make our customers happy.</p>
+                            <h2 class="h2 bg-clip-text text-transparent bg-linear-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-4">Join a team of BUILDERS</h2>
+                            <p class="text-lg text-slate-400">We are builders. Problem solvers and storytellers. We are a diverse team of individuals who build things that matter and delivering value to our clients.</p>
                         </div>
 
                         <!-- Icons with text -->
