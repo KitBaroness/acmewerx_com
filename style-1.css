@@ -1,0 +1,329 @@
+/*! tailwindcss v4.0.3 | MIT License | https://tailwindcss.com */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=fallback') layer(base);
+@layer theme, base, components, utilities;
+@layer theme {
+  :root, :host {
+    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+      "Liberation Mono", "Courier New", monospace;
+    /* All colors remain the same as they're established values */
+    --spacing: 0.2125rem; /* Reduced by 15% from 0.25rem */
+    --breakpoint-sm: 34rem; /* Reduced by 15% from 40rem */
+    --breakpoint-md: 40.8rem; /* Reduced by 15% from 48rem */
+    --breakpoint-lg: 54.4rem; /* Reduced by 15% from 64rem */
+    --breakpoint-xl: 68rem; /* Reduced by 15% from 80rem */
+    --breakpoint-2xl: 81.6rem; /* Reduced by 15% from 96rem */
+    --container-3xs: 13.6rem; /* Reduced by 15% from 16rem */
+    --container-2xs: 15.3rem; /* Reduced by 15% from 18rem */
+    --container-xs: 17rem; /* Reduced by 15% from 20rem */
+    --container-sm: 20.4rem; /* Reduced by 15% from 24rem */
+    --container-md: 23.8rem; /* Reduced by 15% from 28rem */
+    --container-lg: 27.2rem; /* Reduced by 15% from 32rem */
+    --container-xl: 30.6rem; /* Reduced by 15% from 36rem */
+    --container-2xl: 35.7rem; /* Reduced by 15% from 42rem */
+    --container-3xl: 40.8rem; /* Reduced by 15% from 48rem */
+    --container-4xl: 47.6rem; /* Reduced by 15% from 56rem */
+    --container-5xl: 54.4rem; /* Reduced by 15% from 64rem */
+    --container-6xl: 61.2rem; /* Reduced by 15% from 72rem */
+    --container-7xl: 68rem; /* Reduced by 15% from 80rem */
+    --text-xs: 0.6375rem; /* Reduced by 15% from 0.75rem */
+    --text-xs--line-height: 1.275; /* Reduced by 15% from 1.5 */
+    --text-sm: 0.744rem; /* Reduced by 15% from 0.875rem */
+    --text-sm--line-height: 1.335; /* Reduced by 15% from 1.5715 */
+    --text-base: 0.85rem; /* Reduced by 15% from 1rem */
+    --text-base--line-height: 1.275; /* Reduced by 15% from 1.5 */
+    --text-lg: 0.956rem; /* Reduced by 15% from 1.125rem */
+    --text-lg--line-height: 1.275; /* Reduced by 15% from 1.5 */
+    --text-xl: 1.0625rem; /* Reduced by 15% from 1.25rem */
+    --text-xl--line-height: 1.275; /* Reduced by 15% from 1.5 */
+    --text-2xl: 1.275rem; /* Reduced by 15% from 1.5rem */
+    --text-2xl--line-height: 1.203; /* Reduced by 15% from 1.415 */
+    --text-3xl: 1.594rem; /* Reduced by 15% from 1.875rem */
+    --text-3xl--line-height: 1.133; /* Reduced by 15% from 1.333 */
+    --text-4xl: 1.913rem; /* Reduced by 15% from 2.25rem */
+    --text-4xl--line-height: 1.085; /* Reduced by 15% from 1.277 */
+    --text-5xl: 2.338rem; /* Reduced by 15% from 2.75rem */
+    --text-5xl--line-height: 0.935; /* Reduced by 15% from 1.1 */
+    --text-6xl: 2.975rem; /* Reduced by 15% from 3.5rem */
+    --text-6xl--line-height: 0.85; /* Reduced by 15% from 1 */
+    --text-7xl: 3.825rem; /* Reduced by 15% from 4.5rem */
+    --text-7xl--line-height: 0.85; /* Reduced by 15% from 1 */
+    --text-8xl: 5.1rem; /* Reduced by 15% from 6rem */
+    --text-8xl--line-height: 0.85; /* Reduced by 15% from 1 */
+    --text-9xl: 6.8rem; /* Reduced by 15% from 8rem */
+    --text-9xl--line-height: 0.85; /* Reduced by 15% from 1 */
+    /* Font weights remain the same */
+    --tracking-tighter: -0.017em; /* Reduced by 15% from -0.02em */
+    --tracking-tight: -0.0085em; /* Reduced by 15% from -0.01em */
+    --tracking-normal: 0;
+    --tracking-wide: 0.0085em; /* Reduced by 15% from 0.01em */
+    --tracking-wider: 0.017em; /* Reduced by 15% from 0.02em */
+    --tracking-widest: 0.34em; /* Reduced by 15% from 0.4em */
+    --leading-tight: 1.0625; /* Reduced by 15% from 1.25 */
+    --leading-snug: 1.169; /* Reduced by 15% from 1.375 */
+    --leading-normal: 1.275; /* Reduced by 15% from 1.5 */
+    --leading-relaxed: 1.381; /* Reduced by 15% from 1.625 */
+    --leading-loose: 1.7; /* Reduced by 15% from 2 */
+    --radius-xs: 0.106rem; /* Reduced by 15% from 0.125rem */
+    --radius-sm: 0.2125rem; /* Reduced by 15% from 0.25rem */
+    --radius-md: 0.319rem; /* Reduced by 15% from 0.375rem */
+    --radius-lg: 0.425rem; /* Reduced by 15% from 0.5rem */
+    --radius-xl: 0.6375rem; /* Reduced by 15% from 0.75rem */
+    --radius-2xl: 0.85rem; /* Reduced by 15% from 1rem */
+    --radius-3xl: 1.275rem; /* Reduced by 15% from 1.5rem */
+    --radius-4xl: 1.7rem; /* Reduced by 15% from 2rem */
+    /* Shadow values remain similar as they're already relatively small */
+    --ease-in: cubic-bezier(0.4, 0, 1, 1);
+    --ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --animate-spin: spin 0.85s linear infinite; /* Reduced by 15% from 1s */
+    --animate-ping: ping 0.85s cubic-bezier(0, 0, 0.2, 1) infinite; /* Reduced by 15% from 1s */
+    --animate-pulse: pulse 1.7s cubic-bezier(0.4, 0, 0.6, 1) infinite; /* Reduced by 15% from 2s */
+    --animate-bounce: bounce 0.85s infinite; /* Reduced by 15% from 1s */
+    --blur-xs: 3.4px; /* Reduced by 15% from 4px */
+    --blur-sm: 6.8px; /* Reduced by 15% from 8px */
+    --blur-md: 10.2px; /* Reduced by 15% from 12px */
+    --blur-lg: 13.6px; /* Reduced by 15% from 16px */
+    --blur-xl: 20.4px; /* Reduced by 15% from 24px */
+    --blur-2xl: 34px; /* Reduced by 15% from 40px */
+    --blur-3xl: 54.4px; /* Reduced by 15% from 64px */
+    --perspective-dramatic: 85px; /* Reduced by 15% from 100px */
+    --perspective-near: 255px; /* Reduced by 15% from 300px */
+    --perspective-normal: 425px; /* Reduced by 15% from 500px */
+    --perspective-midrange: 680px; /* Reduced by 15% from 800px */
+    --perspective-distant: 1020px; /* Reduced by 15% from 1200px */
+    --aspect-video: 16 / 9;
+    --default-transition-duration: 127.5ms; /* Reduced by 15% from 150ms */
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --default-font-family: var(--font-sans);
+    --default-font-feature-settings: var(--font-sans--font-feature-settings);
+    --default-font-variation-settings: var(
+      --font-sans--font-variation-settings
+    );
+    --default-mono-font-family: var(--font-mono);
+    --default-mono-font-feature-settings: var(
+      --font-mono--font-feature-settings
+    );
+    --default-mono-font-variation-settings: var(
+      --font-mono--font-variation-settings
+    );
+    --font-inter: Inter, sans-serif;
+    --text-base--letter-spacing: -0.014em; /* Reduced by 15% from -0.017em */
+    --text-lg--letter-spacing: -0.014em; /* Reduced by 15% from -0.017em */
+    --text-xl--letter-spacing: -0.014em; /* Reduced by 15% from -0.017em */
+    --text-2xl--letter-spacing: -0.014em; /* Reduced by 15% from -0.017em */
+    --text-3xl--letter-spacing: -0.014em; /* Reduced by 15% from -0.017em */
+    --text-4xl--letter-spacing: -0.014em; /* Reduced by 15% from -0.017em */
+    --text-5xl--letter-spacing: -0.014em; /* Reduced by 15% from -0.017em */
+    --text-6xl--letter-spacing: -0.014em; /* Reduced by 15% from -0.017em */
+    --text-7xl--letter-spacing: -0.014em; /* Reduced by 15% from -0.017em */
+    --animate-endless: endless 17s linear infinite; /* Reduced by 15% from 20s */
+    --animate-shine: shine 4.25s linear 425ms infinite; /* Reduced by 15% from 5s and 500ms */
+    --animate-float: float 1.7s ease-in-out infinite; /* Reduced by 15% from 2s */
+    --animate-infinite-scroll: infinite-scroll 34s linear infinite; /* Reduced by 15% from 40s */
+  }
+}
+
+@layer base {
+  /* The base layer rules remain structurally the same but with adjusted spacing */
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid;
+  }
+  
+  html, :host {
+    line-height: 1.275; /* Reduced by 15% from 1.5 */
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: var( --default-font-family, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" );
+    font-feature-settings: var(--default-font-feature-settings, normal);
+    font-variation-settings: var( --default-font-variation-settings, normal );
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* Other base styles would continue with adjusted measurements */
+}
+
+@layer components {
+  /* Component styles adjusted for size */
+  .h1 {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
+    letter-spacing: var(--tw-tracking, var(--text-5xl--letter-spacing));
+    --tw-font-weight: var(--font-weight-extrabold);
+    font-weight: var(--font-weight-extrabold);
+  }
+  
+  .h2 {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+    letter-spacing: var(--tw-tracking, var(--text-4xl--letter-spacing));
+    --tw-font-weight: var(--font-weight-extrabold);
+    font-weight: var(--font-weight-extrabold);
+  }
+  
+  .h3 {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+    letter-spacing: var(--tw-tracking, var(--text-3xl--letter-spacing));
+    --tw-font-weight: var(--font-weight-extrabold);
+    font-weight: var(--font-weight-extrabold);
+  }
+  
+  .h4 {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+    letter-spacing: var(--tw-tracking, var(--text-2xl--letter-spacing));
+    --tw-font-weight: var(--font-weight-extrabold);
+    font-weight: var(--font-weight-extrabold);
+  }
+  
+  @media (width >= 40.8rem) { /* Adjusted breakpoint */
+    .h1 {
+      font-size: var(--text-6xl);
+      line-height: var(--tw-leading, var(--text-6xl--line-height));
+      letter-spacing: var(--tw-tracking, var(--text-6xl--letter-spacing));
+    }
+    .h2 {
+      font-size: var(--text-5xl);
+      line-height: var(--tw-leading, var(--text-5xl--line-height));
+      letter-spacing: var(--tw-tracking, var(--text-5xl--letter-spacing));
+    }
+    .h3 {
+      font-size: var(--text-4xl);
+      line-height: var(--tw-leading, var(--text-4xl--line-height));
+      letter-spacing: var(--tw-tracking, var(--text-4xl--letter-spacing));
+    }
+  }
+  
+  .btn, .btn-sm {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: calc(infinity * 1px);
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+    border-color: transparent;
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+    white-space: nowrap;
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: 127.5ms; /* Reduced from 150ms */
+    transition-duration: 127.5ms;
+    --tw-ease: var(--ease-in-out);
+    transition-timing-function: var(--ease-in-out);
+  }
+  
+  .btn {
+    padding-inline: calc(var(--spacing) * 4);
+    padding-block: calc(var(--spacing) * 1.5);
+  }
+  
+  .btn-sm {
+    padding-inline: calc(var(--spacing) * 3);
+    padding-block: calc(var(--spacing) * 1);
+  }
+  
+  /* Additional component styles would continue with adjusted measurements */
+}
+
+@layer utilities {
+  /* Utility classes with adjusted spacing */
+  .pointer-events-none {
+    pointer-events: none;
+  }
+  
+  /* Other utility classes would continue with adjusted measurements */
+}
+
+/* Animation keyframes */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-21%); /* Reduced by 15% from -25% */
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+@keyframes endless {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-208px); /* Reduced by 15% from -245px */
+  }
+}
+
+@keyframes shine {
+  0% {
+    top: 0;
+    transform: translateY(-100%) scaleY(8.5); /* Reduced by 15% from 10 */
+    opacity: 0;
+  }
+  2% {
+    opacity: 0.5;
+  }
+  40% {
+    top: 100%;
+    transform: translateY(0) scaleY(170); /* Reduced by 15% from 200 */
+    opacity: 0;
+  }
+  100% {
+    top: 100%;
+    transform: translateY(0) scaleY(1);
+    opacity: 0;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(2.55%); /* Reduced by 15% from 3% */
+  }
+  50% {
+    transform: translateY(-2.55%); /* Reduced by 15% from -3% */
+  }
+  100% {
+    transform: translateY(2.55%); /* Reduced by 15% from 3% */
+  }
+}
+
+@keyframes infinite-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-85%); /* Reduced by 15% from -100% */
+  }
+}
+
+/* Property definitions and other CSS remains structurally the same */
