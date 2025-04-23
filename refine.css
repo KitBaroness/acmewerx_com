@@ -1,0 +1,83 @@
+/* === NAVIGATION REFINEMENTS === */
+
+/* Reduce nav item spacing */
+header nav ul {
+  gap: 1rem; /* slightly tighter */
+}
+
+header nav ul li a {
+  margin: 0 0.5rem; /* override any excessive margin */
+}
+
+/* Prevent nav wrap and shrink spacing */
+.font-medium.text-sm.text-slate-300 {
+  white-space: nowrap;
+  font-size: 0.825rem; /* reduce font size slightly */
+}
+
+/* === HERO SECTION REFINEMENTS === */
+
+/* Tighten padding between nav and hero */
+.hero-section {
+  padding-top: 3rem;   /* was pt-32 → now ~48px */
+  padding-bottom: 2rem; /* reduce bottom gap */
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    padding-top: 4.5rem;  /* was md:pt-52 → now ~72px */
+    padding-bottom: 2.5rem;
+  }
+}
+
+/* Hero Headings */
+.h1 {
+  font-size: 2.25rem;
+  line-height: 1.15;
+}
+.h2 {
+  font-size: 1.75rem;
+  line-height: 1.25;
+}
+.text-lg {
+  font-size: 0.95rem;
+}
+
+/* Tighten vertical space between h1, h2, p */
+h1.h1 + br + h2.h2 {
+  margin-top: 0.5rem;
+}
+h2.h2 + p.text-lg {
+  margin-top: 0.5rem;
+}
+
+/* Ensure button shows above the fold */
+.max-w-xs {
+  max-width: 14rem; /* was 16rem */
+}
+/* === Clients & Partners Section Refinement === */
+.clients-section {
+  padding-top: 2rem; /* Add vertical space above logos */
+  padding-bottom: 2rem; /* Maintain bottom balance */
+}
+@media (min-width: 768px) {
+  .clients-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+/* === Features Section Refinement === */
+.features-section {
+  padding-top: 2.5rem; /* Reduce top space */
+}
+
+@media (min-width: 768px) {
+  .clients-section {
+    padding-bottom: 2.5rem;
+  }
+
+  .features-section {
+    padding-top: 3rem;
+  }
+}

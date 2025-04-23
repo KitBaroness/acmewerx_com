@@ -1,0 +1,159 @@
+/* ACMEWERX Website Refinements
+ * This CSS file addresses spacing and sizing issues
+ * without interfering with the site's core design
+ */
+
+/* Global adjustments */
+body {
+  line-height: 1.4; /* Slightly reduce line height */
+}
+
+
+/* Maintain proper navigation spacing */
+header nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+header nav ul li a {
+  margin: 0 0.5rem; /* Override the compressed margins */
+}
+
+.font-medium.text-sm.text-slate-300 {
+  white-space: nowrap; /* Prevent text wrapping in nav items */
+}
+
+/* Menu items need proper spacing */
+.mx-4, .lg\:mx-5 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* Hero section adjustments */
+.pt-32 {
+  padding-top: 4rem; /* Reduce top padding of hero */
+}
+.md\:pt-52 {
+  padding-top: 8rem; /* Reduce top padding on medium screens */
+}
+
+.pb-16 {
+  padding-bottom: 2rem; /* Reduce bottom padding of hero */
+}
+.md\:pb-32 {
+  padding-bottom: 4rem; /* Reduce bottom padding on medium screens */
+}
+
+/* Typography refinements */
+.h1 {
+  font-size: 2.5rem; /* Slightly reduce headline size */
+  line-height: 1.1;
+}
+.h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+.h3 {
+  font-size: 1.75rem;
+}
+
+.text-lg {
+  font-size: 1rem; /* Reduce paragraph text size */
+}
+
+/* Button placement */
+.max-w-xs {
+  max-width: 16rem; /* Make buttons more compact */
+}
+
+/* Reduce space between sections */
+.py-12 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.md\:py-16 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.md\:py-20 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* Partners/clients section */
+.animate-infinite-scroll {
+  animation-duration: 30s; /* Speed up the scroll animation slightly */
+}
+
+/* Features section */
+.md\:space-x-8 {
+  gap: 1.5rem; /* Slightly reduce gap */
+}
+.lg\:space-x-16 {
+  gap: 2.5rem;
+}
+.xl\:space-x-20 {
+  gap: 3rem;
+}
+
+/* Fix height on mobile for feature showcase */
+.py-24 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+/* Adjust vertical spacing of feature buttons */
+.flex.items-center.text-sm {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Benefits carousel adjustments */
+.swiper-slide {
+  height: auto;
+  min-height: 22rem;
+}
+
+/* CTA section */
+.px-8.py-12 {
+  padding: 2.5rem 2rem;
+}
+.md\:py-20.rounded-\[3rem\] {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Footer adjustments */
+footer .space-y-2 {
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  /* Adjust hero positioning on medium screens */
+  .md\:pt-52 {
+    padding-top: 6rem;
+  }
+  
+  /* Make buttons more visible in first screen */
+  .md\:pb-32 {
+    padding-bottom: 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Mobile-specific adjustments */
+  .h1 {
+    font-size: 2.25rem;
+  }
+  
+  /* Ensure call-to-action button is visible without scrolling */
+  .pb-16 {
+    padding-bottom: 1.5rem;
+  }
+  
+  /* Reduce space between headline and paragraph */
+  h1.h1 + br + h2.h2 {
+    margin-top: 0.5rem;
+  }
+}
