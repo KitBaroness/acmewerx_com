@@ -1,83 +1,98 @@
-/* === NAVIGATION REFINEMENTS === */
+/* 
+ * ACMEWERX Website Spacing Refinements
+ * This CSS file adds subtle spacing improvements for better user experience
+ */
 
-/* Reduce nav item spacing */
-header nav ul {
-  gap: 1rem; /* slightly tighter */
+/* Global section spacing - modest adjustment */
+.section-container {
+  padding: 3rem 0;
+  position: relative;
 }
 
-header nav ul li a {
-  margin: 0 0.5rem; /* override any excessive margin */
-}
-
-/* Prevent nav wrap and shrink spacing */
-.font-medium.text-sm.text-slate-300 {
-  white-space: nowrap;
-  font-size: 0.825rem; /* reduce font size slightly */
-}
-
-/* === HERO SECTION REFINEMENTS === */
-
-/* Tighten padding between nav and hero */
+/* Hero section specific spacing */
 .hero-section {
-  padding-top: 3rem;   /* was pt-32 → now ~48px */
-  padding-bottom: 2rem; /* reduce bottom gap */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
-@media (min-width: 768px) {
-  .hero-section {
-    padding-top: 4.5rem;  /* was md:pt-52 → now ~72px */
-    padding-bottom: 2.5rem;
-  }
-}
-
-/* Hero Headings */
-.h1 {
-  font-size: 2.25rem;
-  line-height: 1.15;
-}
-.h2 {
-  font-size: 1.75rem;
-  line-height: 1.25;
-}
-.text-lg {
-  font-size: 0.95rem;
-}
-
-/* Tighten vertical space between h1, h2, p */
-h1.h1 + br + h2.h2 {
-  margin-top: 0.5rem;
-}
-h2.h2 + p.text-lg {
-  margin-top: 0.5rem;
-}
-
-/* Ensure button shows above the fold */
-.max-w-xs {
-  max-width: 14rem; /* was 16rem */
-}
-/* === Clients & Partners Section Refinement === */
+/* Clients section spacing */
 .clients-section {
-  padding-top: 2rem; /* Add vertical space above logos */
-  padding-bottom: 2rem; /* Maintain bottom balance */
-}
-@media (min-width: 768px) {
-  .clients-section {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 
-/* === Features Section Refinement === */
+/* Features section spacing */
 .features-section {
-  padding-top: 2.5rem; /* Reduce top space */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
-@media (min-width: 768px) {
-  .clients-section {
-    padding-bottom: 2.5rem;
-  }
+/* Subtle margin for section headers */
+h2.h2, h3.h3 {
+  margin-bottom: 1rem;
+}
 
-  .features-section {
-    padding-top: 3rem;
+/* Add minimal space after section descriptions */
+.text-lg.text-slate-400, .text-lg.text-slate-300 {
+  margin-bottom: 1.5rem;
+}
+
+/* Proper spacing for feature buttons */
+.features-section button {
+  margin-bottom: 0.5rem;
+}
+
+/* Add subtle breathing room to highlighted boxes */
+.relative.h-full.bg-slate-800.rounded-3xl {
+  padding: 1.5rem;
+}
+
+/* Better spacing for footer */
+footer {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+}
+
+/* Modest spacing for client logos */
+.animate-infinite-scroll [class*="li"] {
+  margin: 0 1rem;
+}
+
+/* Better mobile spacing */
+@media (max-width: 768px) {
+  .section-container {
+      padding: 2rem 0;
   }
+  
+  .hero-section {
+      padding-top: 4rem;
+      padding-bottom: 2rem;
+  }
+  
+  .features-section {
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+  }
+}
+
+/* Better spacing for feature items */
+.flex.items-center.text-sm.font-medium.text-slate-50 {
+  margin-bottom: 0.5rem;
+}
+
+/* Subtle "Harder.Better.Faster.Stronger.Smarter" section spacing */
+h2.h2.bg-clip-text.text-transparent {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Subtle spacing for the "Learn More" button */
+a.btn.text-slate-900 {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+/* Prevent too much spacing in lists */
+ul.text-slate-400 li {
+  margin-bottom: 0.75rem;
 }
